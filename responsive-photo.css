@@ -1,0 +1,20 @@
+img {
+    width: 236px;
+    border: 2px solid black;
+}
+
+#column1 {
+    width: 250px;
+    display: flex;
+    flex-flow: column wrap-reverse;
+    float: right; 
+}
+
+#column2 {
+    width: 250px; 
+    display: flex; 
+    flex-flow: column wrap-reverse;
+    float: left;
+
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FizzBuzz</title>
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <script>
+        const dest = document.getElementById("container");
+        for (i = 1; i <= 1000; i++) {
+
+            var div = document.createElement("div")
+
+            if (i % 2 == 0) {
+                var even = document.createTextNode("this is an even number:" + i)
+                div.appendChild(even)
+                div.style.fontWeight = "bold"
+            
+            } else if (i % 2 == 1) {
+                var odd = document.createTextNode("this is an odd number:" + i)
+                div.appendChild(odd)
+            }
+
+
+            if (i % 3 == 0) {
+                div.style.color = "red"
+            }
+
+            dest.appendChild(div)
+
+
+        }
+
+
+
+        console.log(i);
+    </script>
+
+
+</body>
+
+</html>
